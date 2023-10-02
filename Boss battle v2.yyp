@@ -35,13 +35,18 @@
   },
   "resources": [
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
+    {"id":{"name":"sTurret","path":"sprites/sTurret/sTurret.yy",},},
+    {"id":{"name":"oTankTurret","path":"objects/oTankTurret/oTankTurret.yy",},},
     {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"sound","path":"sounds/sound/sound.yy",},},
+    {"id":{"name":"oTankBase","path":"objects/oTankBase/oTankBase.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"sPlayerBullet","path":"sprites/sPlayerBullet/sPlayerBullet.yy",},},
+    {"id":{"name":"sBase","path":"sprites/sBase/sBase.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

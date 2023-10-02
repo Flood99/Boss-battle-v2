@@ -18,9 +18,13 @@
   ],
   "ResourceOrderSettings": [
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
+    {"name":"sTurret","order":4,"path":"sprites/sTurret/sTurret.yy",},
+    {"name":"oTankTurret","order":5,"path":"objects/oTankTurret/oTankTurret.yy",},
     {"name":"oGun","order":2,"path":"objects/oGun/oGun.yy",},
     {"name":"oBullet","order":3,"path":"objects/oBullet/oBullet.yy",},
+    {"name":"oTankBase","order":4,"path":"objects/oTankBase/oTankBase.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"sPlayerBullet","order":2,"path":"sprites/sPlayerBullet/sPlayerBullet.yy",},
+    {"name":"sBase","order":3,"path":"sprites/sBase/sBase.yy",},
   ],
 }
