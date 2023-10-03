@@ -7,7 +7,7 @@ yto = 0
 offset = 16
 bulletSpeed = 20
 cooldown = false
-firerate = 5
+firerate = 15
 
 
 

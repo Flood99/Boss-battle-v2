@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-spd = 1
+hurtSoundCooldown = false
+flashing = false
+maxHp = 5000
+hp = 5000
+randomize()
+maxTurn = 2
+spd = 2
 enum States 
 {
 	Idle,
@@ -9,6 +15,7 @@ enum States
 }
 
 state = States.Idle
+phase = Phases.phase1
 
 xGoto = 0
 yGoto = 0

@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oBullet",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oTankBase","path":"objects/oTankBase/oTankBase.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sPlayerBullet",
-    "path": "sprites/sPlayerBullet/sPlayerBullet.yy",
+    "name": "sPlayerBulletBig",
+    "path": "sprites/sPlayerBulletBig/sPlayerBulletBig.yy",
   },
   "spriteMaskId": null,
   "visible": true,

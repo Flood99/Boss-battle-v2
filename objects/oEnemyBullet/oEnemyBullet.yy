@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "oEnemyBullet",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sBarTop",
-    "path": "sprites/sBarTop/sBarTop.yy",
+    "name": "sEnemyBulletBig",
+    "path": "sprites/sEnemyBulletBig/sEnemyBulletBig.yy",
   },
   "spriteMaskId": null,
   "visible": true,
