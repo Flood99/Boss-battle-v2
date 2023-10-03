@@ -9,4 +9,3 @@ hsp = 0
 vsp = 0
 spd = 5
 
-instance_create_layer()

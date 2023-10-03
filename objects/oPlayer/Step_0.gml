@@ -14,21 +14,16 @@ vsp = (_keyDown - _keyUp) * spd
 
 move_and_collide(hsp,vsp,oWall)
 show_debug_message(flashing)
+
+
 if(flashing)
 {
-	if iswhite = false
-	{
-		image_index = 1
-		iswhite = true
+	image_speed = 10
 	
-	}else{
-		
-		iswhite = false 
-		image_index = 0
-		
-	}
-	
-
+}else
+{
+	image_speed = 0
+	image_index = 0
 
 }
 
