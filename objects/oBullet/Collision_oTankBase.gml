@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-other.hp -= 200
+other.hp -= 40
+
 
 if other.hurtSoundCooldown = false 
 {

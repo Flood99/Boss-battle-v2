@@ -9,7 +9,7 @@ function RotateTowards(spd,destination){
 	
 
 }
-function FireBullet(_x,_y,_offset,_spd,_obj)
+function FireBullet(_x,_y,_offset,_spd,_obj,_keepDirection)
 {
 	var _xx = _x + lengthdir_x(_offset,image_angle)
 	var _yy = _y + lengthdir_y(_offset,image_angle)
@@ -17,9 +17,9 @@ function FireBullet(_x,_y,_offset,_spd,_obj)
 	with(_proj)
 	{
 		speed = _spd
-		direction = other.image_angle
+		if _keepDirection  direction = other.image_angle
 			
 	
 	}
-	
+	return _proj
 }

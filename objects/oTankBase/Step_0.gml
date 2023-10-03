@@ -41,6 +41,53 @@ if(state = States.Idle)
 
 }
 
+
+
+
+
+switch(phase)
+{
+	case Phases.phase1:
+	
+	break;
+	
+	case Phases.phase2:
+	if(bulletRingCooldown = false)
+	{
+		for (i = 0; i < bulletCount; i++;)
+		{
+			var _proj = FireBullet(x,y,0,5,oEnemyBullet,false)
+			with (_proj) direction = 360/other.bulletCount * other.i
+			show_debug_message(i)
+		}
+		bulletRingCooldown = true
+		alarm[3] = firerate
+		
+	}
+	break;
+	
+	case Phases.phase3:
+	if(bulletRingCooldown = false)
+	{
+		for (i = 0; i < bulletCount; i++;)
+		{
+			var _proj = FireBullet(x,y,0,10,oEnemyBullet,false)
+			with (_proj) direction = 360/other.bulletCount * other.i
+			show_debug_message(i)
+		}
+		bulletRingCooldown = true
+		alarm[3] = firerate/2
+		
+	}
+	break;
+
+}
+
+
+
+
+
+
 			
 if flashing image_index = 1 else image_index = 0
 

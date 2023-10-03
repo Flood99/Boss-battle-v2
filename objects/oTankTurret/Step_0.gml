@@ -13,7 +13,7 @@ switch(phase)
 	case Phases.phase1:
 	if(cooldown = false)
 	{
-		FireBullet(x,y,80,10,oEnemyBullet)
+		var _proj = FireBullet(x,y,80,10,oEnemyBullet,true)
 		cooldown = true
 		alarm[0] = firerate
 	}
@@ -23,7 +23,7 @@ switch(phase)
 	if(cooldown = false)
 	{
 		firerate = 30
-		FireBullet(x,y,80,10,oEnemyBullet)
+		FireBullet(x,y,80,10,oEnemyBullet,true)
 		cooldown = true
 		alarm[0] = firerate
 	}
@@ -33,7 +33,7 @@ switch(phase)
 	if(cooldown = false)
 	{
 		firerate = 20
-		FireBullet(x,y,80,10,oEnemyBullet)
+		FireBullet(x,y,80,10,oEnemyBullet,true)
 		cooldown = true
 		alarm[0] = firerate
 	}
