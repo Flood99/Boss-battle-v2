@@ -1,8 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function RotateTowards(spd,destination){
+function RotateTowards(spd,xDestination,yDestination,){
 	
-	var dif = angle_difference(destination,image_angle)
+	
+	var dif = angle_difference(point_direction(x,y,xDestination,yDestination),image_angle)
 	image_angle += dif*spd
 	
 	
@@ -17,7 +18,11 @@ function FireBullet(_x,_y,_offset,_spd,_obj,_keepDirection)
 	with(_proj)
 	{
 		speed = _spd
-		if _keepDirection  direction = other.image_angle
+		if _keepDirection  
+		{
+			direction = other.image_angle
+			image_angle = other.image_angle
+		}
 			
 	
 	}

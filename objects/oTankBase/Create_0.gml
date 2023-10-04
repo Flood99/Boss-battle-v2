@@ -5,8 +5,8 @@ bulletRingCooldown = false
 ringFirerate = 120
 hurtSoundCooldown = false
 flashing = false
-maxHp = 5000
-hp = 5000
+maxHp = 6000
+hp = 6000
 randomize()
 maxTurn = 2
 spd = 2

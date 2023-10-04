@@ -1,11 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+damage = 20
 
-iswhite = false
-flashing = false
-hp = 300
 
-hsp = 0
-vsp = 0
-spd = 5
+
+
 

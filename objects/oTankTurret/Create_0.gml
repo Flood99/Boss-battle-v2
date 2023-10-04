@@ -3,10 +3,13 @@
 
 base = oTankBase
 firerate = 60
+missileFirerate = 180
 phase = base.phase
 offset = 16
 bulletSpeed = 20
 cooldown = false
+missileCooldown = false
+
 
 
 

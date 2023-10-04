@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-RotateTowards(0.1,point_direction(x,y,oPlayer.x,oPlayer.y))
+RotateTowards(0.1,oPlayer.x,oPlayer.y)
 
 phase = base.phase
 
@@ -28,8 +28,23 @@ switch(phase)
 		alarm[0] = firerate
 	}
 	break;
-	
 	case Phases.phase3:
+	if(cooldown = false)
+	{
+		firerate = 30
+		FireBullet(x,y,80,10,oEnemyBullet,true)
+		cooldown = true
+		alarm[0] = firerate
+	}
+	if(missileCooldown = false)
+	{
+		missilefirerate = 180
+		FireBullet(x,y,80,4,oEnemyRocket,true)
+		missileCooldown = true
+		alarm[1] = missileFirerate
+	}
+	
+	case Phases.phase4:
 	if(cooldown = false)
 	{
 		firerate = 20
@@ -37,6 +52,7 @@ switch(phase)
 		cooldown = true
 		alarm[0] = firerate
 	}
+	
 	break;
 
 }

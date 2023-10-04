@@ -33,6 +33,7 @@ if(mouse_check_button(mb_any)&& cooldown = false)
 	{
 		speed = other.bulletSpeed
 		direction = other.image_angle+ random_range(-5,5)
+		damage = other.dmg
 			
 	
 	}
