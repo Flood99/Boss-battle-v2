@@ -3,8 +3,8 @@
 
 hpPercent = oTankBase.hp / oTankBase.maxHp
 hpBarx = 100
-hpBary = room_height - 64
-hpBarWidth = (room_width - hpBarx*2)
+hpBary = display_get_gui_height() - 64
+hpBarWidth = (display_get_gui_width()- hpBarx*2)
 
 hpBarHeight = 50
 if(hpPercent >0.8) oTankBase.phase = Phases.phase1

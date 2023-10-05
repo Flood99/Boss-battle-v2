@@ -11,8 +11,8 @@ hsp = (_keyRight - _keyLeft) * spd
 vsp = (_keyDown - _keyUp) * spd
 
 
-
-move_and_collide(hsp,vsp,oWall)
+var _tilemap = layer_tilemap_get_id("Collision")
+move_and_collide(hsp,vsp,_tilemap)
 show_debug_message(flashing)
 
 
