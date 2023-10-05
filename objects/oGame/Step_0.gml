@@ -8,10 +8,12 @@ hpBarWidth = (room_width - hpBarx*2)
 
 hpBarHeight = 50
 if(hpPercent >0.8) oTankBase.phase = Phases.phase1
-if(hpPercent <=0.6) oTankBase.phase = Phases.phase2
+if(hpPercent <=0.8) oTankBase.phase = Phases.phase2
 if(hpPercent <=0.5) oTankBase.phase = Phases.phase3
 if(hpPercent <=0.3) oTankBase.phase = Phases.phase4
+if(oTankBase.hp <= 0) oTankBase.phase = Phases.dead
 
 
 
-
+/*show_debug_message("Tank: "+string(oTankBase.phase))
+show_debug_message("Tank: "+ string(oTankTurret.phase))

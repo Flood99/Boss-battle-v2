@@ -11,6 +11,7 @@ randomize()
 maxTurn = 2
 spd = 2
 firerate = 120
+
 enum States 
 {
 	Idle,
@@ -24,3 +25,4 @@ phase = Phases.phase1
 xGoto = 0
 yGoto = 0
 alarm[0] = 60
+turret = instance_create_layer(x,y,"Turret",oTankTurret)

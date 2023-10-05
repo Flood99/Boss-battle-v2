@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(state = States.Moving)
+if(state = States.Moving && phase != Phases.dead )
 {
 	
 	if(point_distance(x,y,xGoto,yGoto ) >10)
@@ -58,12 +58,16 @@ switch(phase)
 		{
 			var _proj = FireBullet(x,y,0,5,oEnemyBullet,false)
 			with (_proj) direction = 360/other.bulletCount * other.i
-			show_debug_message(i)
+		
+			
+		
 		}
+		audio_play_sound(tankShootSound,2,false)
 		bulletRingCooldown = true
 		alarm[3] = firerate
 		
 	}
+	break;
 	
 	case Phases.phase3:
 	if(bulletRingCooldown = false)
@@ -72,8 +76,9 @@ switch(phase)
 		{
 			var _proj = FireBullet(x,y,0,5,oEnemyBullet,false)
 			with (_proj) direction = 360/other.bulletCount * other.i
-			show_debug_message(i)
+			
 		}
+		audio_play_sound(tankShootSound,2,false)
 		bulletRingCooldown = true
 		alarm[3] = firerate
 		
@@ -87,12 +92,32 @@ switch(phase)
 		{
 			var _proj = FireBullet(x,y,0,10,oEnemyBullet,false)
 			with (_proj) direction = 360/other.bulletCount * other.i
-			show_debug_message(i)
+		
 		}
+		audio_play_sound(tankShootSound,2,false)
 		bulletRingCooldown = true
 		alarm[3] = firerate/2
-		
 	}
+		if(!instance_exists(oSmallSmokeParticle))
+	{
+		instance_create_layer(x,y,"Particles",oSmallSmokeParticle)
+	
+	}
+		
+	break;
+	
+	case Phases.dead:
+	if(!instance_exists(oSmokeParticle))
+	{
+		instance_create_layer(x,y,"Particles",oSmokeParticle)
+	
+	}
+	if(!instance_exists(oSparkParticle))
+	{
+		instance_create_layer(x,y,"Particles",oSparkParticle)
+		audio_play_sound(tankDestroySound,1,false)
+	}
+	
 	break;
 
 }

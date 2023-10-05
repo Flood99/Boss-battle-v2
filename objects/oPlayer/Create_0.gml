@@ -3,7 +3,7 @@
 
 iswhite = false
 flashing = false
-hp = 300
+hp = 3
 
 hsp = 0
 vsp = 0

@@ -13,6 +13,10 @@ enum Phases
 	phase2,
 	phase3,
 	phase4,
+	dead,
 
 
 }
+
+
+//show_debug_log(true)

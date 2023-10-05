@@ -7,8 +7,7 @@ var dir = point_direction(target.x,target.y,mouse_x,mouse_y)
 var dis = clamp(point_distance(target.x,target.y,mouse_x,mouse_y),0,10)
 var xto = target.x + lengthdir_x(dis,dir)
 var yto = target.y + lengthdir_y(dis,dir)
-x += (xto-x)/3
-y += (yto-y)/3
+
 image_angle = dir 
 
 if(image_angle > 90 && image_angle < 270)
@@ -41,6 +40,6 @@ if(mouse_check_button(mb_any)&& cooldown = false)
 	y = y - lengthdir_y(10, image_angle);
 	cooldown = true
 	alarm[0] = firerate
-	audio_play_sound(sound,1,false)
+	audio_play_sound(Hurt,2,false)
 	
 }
